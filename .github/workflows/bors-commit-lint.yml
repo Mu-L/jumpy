@@ -1,4 +1,4 @@
-name: Lint commit message
+name: 🕵 Lint Bors Commit Message
 on:
   push:
     branches:

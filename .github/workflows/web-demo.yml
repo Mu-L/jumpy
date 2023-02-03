@@ -1,4 +1,4 @@
-name: Publish Web Demo
+name: 🌐 Publish Web Demo
 
 on:
   push:
@@ -6,6 +6,10 @@ on:
       - "v*"
     branches:
       - main
+
+concurrency:
+  group: web-demo
+  cancel-in-progress: true
 
 jobs:
   publish-web-demo:
